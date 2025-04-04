@@ -37,3 +37,10 @@ else:
     plt.axis('off') # Hide axes
 
     plt.show() # Show the grayscale image
+
+croppedimage = image[100:300, 200:400]
+croppedrgb = cv2.cvtColor(croppedimage, cv2.COLOR_BGR2RGB)
+plt.imshow(croppedrgb)
+plt.title("Cropped Region")
+plt.show()
+    
